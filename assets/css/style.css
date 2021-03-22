@@ -9,7 +9,7 @@
 }
 
 .form__block-wrapper {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .box-title {
@@ -64,6 +64,7 @@
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
   padding: 50px 65px;
 }
 
@@ -92,7 +93,7 @@
 .form__top__start-btn-link {
   border-radius: 3px;
   font-size: 13px;
-  padding: 13px 0;
+  padding: 15px 0;
   transition: all 0.3s ease;
 }
 
@@ -327,21 +328,26 @@
 
 .text-link {
   color: #03beaf;
+  transition: all 0.3s ease;
+}
+.text-link:hover {
+  opacity: 0.7;
 }
 
-.inquiry {
-  padding-top: 30px;
-}
-
-.inquiry {
+.inquiry__text-box {
   font-size: 12px;
   text-align: center;
 }
 
-.inquiry p {
+.inquiry__text-box:last-child {
+  margin-top: 15px;
+}
+
+.inquiry__text-box p {
   display: inline-block;
 }
-.inquiry__link:last-child {
-  display: block;
-  margin-top: 15px;
+
+.inquiry__link:hover {
+  border-bottom: 1px solid #03beaf;
+  opacity: 0.7;
 }
