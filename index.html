@@ -29,16 +29,12 @@
           <form action="#" method="POST">
             <div class="form__block-wrapper form__block__name">
               <div class="form__block__name-box">
-                <p class="form__block__name-box__title box-title">名字
-                  <span>※</span>
-                </p>
-                <input type="text" required class="form__block__name-box__name input-box">
+                <p class="form__block__name-box__title box-title">名字<span>※</span></p>
+                <input type="text" name="topName" required class="form__block__name-box__name input-box">
               </div>
               <div class="form__block__name-box">
-                <p class="form__block__name-box__title box-title">名前
-                  <span>※</span>
-                </p>
-                <input type="text" required class="form__block__name-box__name input-box">
+                <p class="form__block__name-box__title box-title">名前<span>※</span></p>
+                <input type="text" name="underName" required class="form__block__name-box__name input-box">
               </div>
             </div>
             <div class="form__block-wrapper form__block__gender">
@@ -60,52 +56,49 @@
               <p class="box-title">出身</p>
               <div class="from__select">
                 <select class="from__select-box" name="from">
-                  <option name="from" value="tokyo">東京</option>
-                  <option name="from" value="chiba">千葉</option>
-                  <option name="from" value="saitama">埼玉</option>
-                  <option name="from" value="kanagawa">神奈川</option>
+                  <option value="tokyo">東京</option>
+                  <option value="chiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
                 </select>
               </div>
             </div>
             <div class="form__block-wrapper form__block__email">
-              <p class="box-title">Eメール
-                <span>※</span>
-              </p>
-                <input type="email" name="email" placeholder="ex) hoge@example.com" required class="input-box">
-              
+              <p class="box-title">Eメール<span>※</span></p>
+              <input type="email" name="email" placeholder="ex) hoge@example.com" required class="input-box">
             </div>
             <div class="form__block-wrapper form__block__tel">
               <p class="box-title">電話番号</p>
-                <input type="text" name="tel" placeholder="ex) 09012345678" class="input-box">
+              <input type="text" name="tel" placeholder="ex) 09012345678" class="input-box">
             </div>
             <div class="form__block-wrapper form__block__password">
-              <p class="box-title">パスワード
-                <span>※</span>
-              </p>
-                <input type="password" name="password" required class="input-box">
-              
+              <p class="box-title">パスワード<span>※</span></p>
+              <input type="password" name="password" required class="input-box">
             </div>
             <div class="form__block-wrapper form__block__password">
-              <p class="box-title">パスワード(確認用)
-                <span>※</span>
-              </p>
-                <input type="password" name="password" required class="input-box">
-              
+              <p class="box-title">パスワード(確認用)<span>※</span></p>
+              <input type="password" name="password-check" required class="input-box">
             </div>
             <div class="form__block-wrapper form__block__course">
               <p class="box-title">希望コース</p>
-              <label class="course-label label-box">
-                <input type="checkbox" name="course" value="front">
-                <span class="label-span">フロントエンド</span>
-              </label>
-              <label class="course-label label-box">
-                <input type="checkbox" name="course" value="front">
-                <span class="label-span">バックエンド</span>
-              </label>
-              <label class="course-label label-box">
-                <input type="checkbox" name="course" value="front">
-                <span class="label-span">アプリ</span>
-              </label>
+              <div class="course-checkbox">
+                <label class="course-label label-box">
+                  <input type="checkbox" name="course" value="front">
+                  <span class="label-span">フロントエンド</span>
+                </label>
+              </div>
+              <div class="course-checkbox">
+                <label class="course-label label-box">
+                  <input type="checkbox" name="course" value="back">
+                  <span class="label-span">バックエンド</span>
+                </label>
+              </div>
+              <div class="course-checkbox">
+                <label class="course-label label-box">
+                  <input type="checkbox" name="course" value="appli">
+                  <span class="label-span">アプリ</span>
+                </label>
+              </div>
             </div>
             <div class="form__block-wrapper remarks">
               <p class="box-title">備考</p>
