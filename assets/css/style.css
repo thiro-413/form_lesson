@@ -26,7 +26,7 @@
   background-color: #f8f8f8;
   border: 1px solid #cfcece;
   border-radius: 2px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  
   box-sizing: border-box;
   color: #5f5f5f;
   display: block;
@@ -36,7 +36,9 @@
 }
 
 .input-box:focus {
-  border-color: #77e1e9;
+  background-color: #fff;
+  border-color: rgba(56, 131, 136, 0.4);
+  box-shadow: 0 0 0 2px rgba(1, 192, 206, 0.1);
   outline: none;
 }
 
@@ -242,6 +244,10 @@
   padding: 8px 5px;
   position: relative;
   width: 100%;
+}
+
+.from__select-box:focus {
+  outline: none;
 }
 
 
